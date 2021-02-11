@@ -1,7 +1,7 @@
 var x = 0;
 var y = 1;
 
-function printvalues() {
+function printValues() {
   console.log(x);
   console.log(y);
   
@@ -10,4 +10,4 @@ function printvalues() {
   console.log(x);
   console.log(y);
 }
-printvalues();
+printValues();
