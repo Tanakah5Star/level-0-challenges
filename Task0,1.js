@@ -5,8 +5,8 @@ function printvalues() {
   console.log(x);
   console.log(y);
   
-   x += 3;
-  y += x;
+    x += 3;
+    y += x;
   console.log(x);
   console.log(y);
 }
