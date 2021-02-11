@@ -1,4 +1,5 @@
 var x,y,z,a,b;
+//Function to demonstrate how BODMAS works.
 function demoBodmas(){
     x = 1 + 1 * 2;
     y = (1 + 1) * 2;
@@ -6,11 +7,10 @@ function demoBodmas(){
     a = 1 + 1 * 2 / 2;
     b = (1 + 1 * 2 ) / 2; 
 
-    console.log(x+y+z+a+b);
-    console.log(y);
-    console.log(z);
-    console.log(a);
-    console.log(b);
+    //Display the values after BODMAS operations
+    //Values displayed side by side
+    console.log(x,y,z,a,b);
+    
 }
     demoBodmas();
 
