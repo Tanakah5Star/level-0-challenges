@@ -9,7 +9,7 @@ function demoBodmas(){
 
     //Display the values after BODMAS operations
     //Values displayed side by side
-    console.log(x,y,z,a,b);
+    console.log("x: "+ x,"y: "+y,"z: "+ z,"a: "+ a,"b: "+ b);
     
 }
     demoBodmas();
