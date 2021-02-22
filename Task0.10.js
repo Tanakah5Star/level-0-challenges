@@ -1,26 +1,3 @@
-//function findCommonCharacters(stringOne, stringTwo) {
- // var stringOne = stringOne.split("");
-  //var stringTwo = stringTwo.split("");
-
-  //function returnSubsequence(string1,string2){
-
-    //var string1; //= stringOne.split("");
-    //var  string2; //= stringTwo.split("");
-
-    /*let resultString = ' ';
-    for (let i of string1){
-        for(let n of string2){
-            if( n === i){
-               resultString.push(n);
-            }
-        }
-    };
-    return resultString;
-  }
-         
-console.log(returnSubsequence("tanakah","mashoko"));*/
-
-
 function findCommonCharacters(string1, string2) {
   string1 += "";
   string2 += "";
