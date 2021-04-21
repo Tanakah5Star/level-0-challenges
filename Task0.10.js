@@ -1,19 +1,23 @@
-function findCommonCharacters(string1, string2) {
-  string1 += "";
-  string2 += "";
-  //function check for common characters in both strings comparing each character.
-  var i, a ={};
-  for (i = 0, l = string1.length; i < l; i++) a[string1[i]] = (a[string1[i]] || 0) + 1;
-  for (i = 0, l = string2.length; i < l; i++) a[string2[i]] = (a[string2[i]] || 0) + 1;
-  // function deletes all the characters that are not common to both strings.
-  for (var p in a)
-  if (a[p] <= 1)
-  delete a[p];
-  
-  return a;
-  
-  }
-  var output = findCommonCharacters('bullion', 'albion');
-    for (var a in output) {
-      console.log("Output: " + a);
-  }
+const findCommonCharacters = (string1, string2) => {
+    let result = "",
+        longer, shorter,
+        temp1 = new Set(string1.split("")),
+        temp2 = new Set(string2.split(""))
+
+    if (temp1.length > temp2.length) {
+        longer = [...temp1];
+        shorter = [...temp2];
+    } 
+        shorter = [...temp1];
+        longer = [...temp2];
+    
+    for (let i = 0; i < longer.length; i ++) {
+        for (let j = 0; j < shorter.length; j++) {
+            if (shorter[j] === longer[i]) {
+                result += shorter[j] + ", ";
+            }
+        }
+    }
+    return "Common letters: " + result;
+}
+console.log(findCommonCharacters("bullion", "albion"));
