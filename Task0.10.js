@@ -1,23 +1,14 @@
-const findCommonCharacters = (string1, string2) => {
-    let result = "",
-        longer, shorter,
-        temp1 = new Set(string1.split("")),
-        temp2 = new Set(string2.split(""))
+function commonLetters(word1, word2){
+  var commons = "";
 
-    if (temp1.length > temp2.length) {
-        longer = [...temp1];
-        shorter = [...temp2];
-    } 
-        shorter = [...temp1];
-        longer = [...temp2];
-    
-    for (let i = 0; i < longer.length; i ++) {
-        for (let j = 0; j < shorter.length; j++) {
-            if (shorter[j] === longer[i]) {
-                result += shorter[j] + ", ";
-            }
-        }
-    }
-    return "Common letters: " + result;
+  for(var i = 0; i < word1.length; i++){
+      for(var j = 0; j < word2.length; j++){
+          if(word2[j] === word1[i]){
+              commons += word1[i];
+          }
+      }
+  }
+  return "Common letters: " + commons.split("");
 }
-console.log(findCommonCharacters("bullion", "albion"));
+
+console.log(commonLetters("house", "computers"));
