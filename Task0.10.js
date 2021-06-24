@@ -1,14 +1,10 @@
 function commonLetters(word1, word2){
-  var commons = "";
+  let commons = [];
 
-  for(var i = 0; i < word1.length; i++){
-      for(var j = 0; j < word2.length; j++){
-          if(word2[j] === word1[i]){
-              commons += word1[i];
-          }
-      }
+  for(let i = 0; i < word2.length; i++){
+     if(word1.includes(word2[i]))
+       commons.push(word2[i]);
   }
-  return "Common letters: " + commons.split("");
+  return "Common letters: " + commons;
 }
-
 console.log(commonLetters("house", "computers"));
