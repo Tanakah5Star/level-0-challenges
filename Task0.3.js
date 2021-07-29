@@ -1,5 +1,4 @@
-function hello(str){
-    
-    console.log("Hello " + str +"!");
+function hello(str) {
+  console.log("Hello " + str + "!");
 }
 hello("Tanakah");
