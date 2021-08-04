@@ -1,5 +1,6 @@
-function printVowels(anyString){
-
-   console.log(anyString.replace(/[^aeiou]/ig, ""));
+function printVowels(anyString) {
+  let vowels = "";
+  vowels = anyString.replace(/[^aeiou]/gi, "").split("");
+  return "Vowels: " + vowels;
 }
-printVowels("TKSaaeiO");
+console.log(printVowels("House"));
